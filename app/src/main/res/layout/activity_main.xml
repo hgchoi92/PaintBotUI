@@ -7,23 +7,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/getReadingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
-        android:text="Get Readings"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="389dp"
-        tools:text="Get Readings" />
-
-    <Button
         android:id="@+id/onButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/offButton"
-        android:layout_toStartOf="@+id/getReadingsButton"
+        android:layout_marginStart="50dp"
         android:text="ON"
         tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="279dp" />
@@ -40,46 +29,13 @@
         tools:layout_editor_absoluteX="236dp"
         tools:layout_editor_absoluteY="279dp" />
 
-    <TextView
-        android:id="@+id/readingFR"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/readingFL"
-        android:layout_toEndOf="@+id/getReadingsButton"
-        android:text="US2"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="86dp" />
-
-    <TextView
-        android:id="@+id/readingFL"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/onButton"
-        android:layout_marginTop="117dp"
-        android:text="US1"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="86dp" />
-
-    <TextView
-        android:id="@+id/readingSL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/onButton"
-        android:layout_marginTop="229dp"
-        android:text="US3"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="151dp" />
-
-    <TextView
-        android:id="@+id/readingSR"
-        android:layout_width="wrap_content"
-        android:layout_height="18dp"
-        android:layout_alignTop="@+id/readingSL"
-        android:layout_toEndOf="@+id/getReadingsButton"
-        android:text="US4"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:layout_marginTop="92dp"
+        android:src="@drawable/logo" />
 
 </RelativeLayout>

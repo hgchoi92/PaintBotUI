@@ -58,13 +58,8 @@ public class MainActivity extends Activity {
 
     private void findViews(){
 
-         readingFL = (TextView) findViewById(R.id.readingFL);
-         readingFR = (TextView) findViewById(R.id.readingFR);
-         readingSL = (TextView) findViewById(R.id.readingSL);
-         readingSR = (TextView) findViewById(R.id.readingSR);
          onButton = (Button) findViewById(R.id.onButton);
          offButton = (Button) findViewById(R.id.offButton);
-         getReadingsButton = (Button) findViewById(R.id.getReadingsButton);
     }
 
     @Override
@@ -172,18 +167,7 @@ public class MainActivity extends Activity {
 
             }
         });
-        //end light on button handler
 
-        //start light off button handler
-
-        getReadingsButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on temp button click
-
-                (new Thread(new workerThread("getReadings"))).start();
-
-            }
-        });
 
         // end light off button handler
 
